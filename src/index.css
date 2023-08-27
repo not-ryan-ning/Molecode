@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "titleFont";
+  /* src: url("/visage/Visage Regular.otf") format("opentype"); */
+  src: url("/apparel/Apparel Black.ttf") format("truetype");
+}
+
+
+
+body {
+  background-color: #0c0c0c;
+  
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+  padding-bottom:175px;
+}
+
+.titleText {
+  display: flex;
+  margin: auto;
+}
+
+.firstSubTitle p {
+  font-family: "titleFont";
+  padding: 0;
+  margin: 75px 0 0 100px;
+  color: #42a6ff;
+  font-size: 3rem;
+}
+
+.firstSubTitle p::before {
+  content: "DECODING";
+  color: #0c0c0c;
+  position: absolute;
+  background: #0c0c0c;
+  z-index: 12;
+  font-size: 3rem;
+  animation: reveal-text 1.2s ease forwards;
+  animation-delay: 0.25s;
+}
+
+
+.mainTitle h1 {
+  font-family: "titleFont";
+  color: #f4f4f4;
+  padding: 0;
+  margin: -30px 0 -30px 95px;
+  font-size: 8rem;
+  z-index: 8;
+}
+
+.mainTitle h1::before {
+  content: "PROTEIN";
+  color: #0c0c0c;
+  position: absolute;
+  background: #0c0c0c;
+  z-index: 9;
+  animation: reveal-text-special 1.2s ease forwards;
+  animation-delay: 0.75s;
+}
+
+.secondSubTitle h1 {
+  color: #ffffff;
+  padding: 0;
+  margin: 0 0 0 100px;
+  font-size: 4rem;
+  z-index: 100;
+}
+
+.secondSubTitle h1::before {
+  content: "SEQUENCES";
+  position: absolute;
+  background-color: #0c0c0c;
+  color: #0c0c0c;
+  z-index: 10;
+  font-size: 4rem;
+  animation: reveal-text 1.2s ease forwards;
+  animation-delay: 1.25s;
+}
+
+.thirdSubTitle p {
+  padding: 0;
+  margin: -10px 0 100px 100px;
+  font-size: 2rem;
+  color: #6699cc;
+
+}
+
+.thirdSubTitle p::before {
+  content: "at your fingertips.";
+  position: absolute;
+  background-color: #0c0c0c;
+  color: #0c0c0c;
+  z-index: 7;
+  font-size: 2rem;
+  animation: reveal-text 1.2s ease forwards;
+  animation-delay: 1.75s;
+}
+
+@keyframes reveal-text {
+  from{
+      opacity: 1;
+  }
+  
+  to {
+      transform: translateY(50%) scaleY(0);
+  }
+}
+
+@keyframes reveal-text-special {
+  from{
+      opacity: 1;
+  }
+  
+  to {
+      transform: translateY(35%) scaleY(0);
+  }
+}
+
+.picture1 {
+  height: 500px;
+  transform: translateX(100px) rotate(20deg) scale(1.1);
+}
+
+.bar {
+  position:absolute;
+  height:500px;
+  width: 550px;
+  z-index: 1;
+  background-color: #0c0c0c;
+  animation: reveal-picture 2.3s ease forwards;
+  animation-delay: 1.25s;
+}
+
+@keyframes reveal-picture {
+  from{
+      opacity: 1;
+  }
+  
+  to {
+      transform: translateY(-50%) scaleY(0);
+  }
+}
+
+.bentoContainer {
+  grid-template-columns: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  font-family: 'titleFont';
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 35px 0 50px 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0c0c0c;
+}
+
+.navbar li {
+  float: right;
+  font-size: smaller;
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #42a6ff;
+}
+
+.navbar .uploadButton a:hover {
+  background-color: #72ca20;
+}
+
+.processButton {
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+.uploadButton {
+  padding-right: 100px;
+  background-color: #42a6ff;
+  background-clip: content-box;
+}
+
+.titleName {
+  padding-right:810px;
+}
+
+.titleName h1 {
+  font-family: "titleFont";
+  margin: -10px 0 0 0;
+  font: 12rem;
+}
+
+.navbar .titleName a:hover {
+  background-color:#0c0c0c;
+}
+
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 1.3fr 2fr; 
+  gap: 20px; 
+  padding-bottom:150px;
+}
+
+.column2 {
+  padding-right: 25px;
+  margin-right: 25px;
+  margin-top: 100px;
+  border-left: 2px solid #42a6ff;
+  padding-left: 25px;
+
+}
+
+.column2 p {
+  color: white;
+}
+
+.secondSubTitle1 {
+  color:#42a6ff;
+  padding: 0;
+  margin: 0 0 -100px 100px;
+  font-size: 4rem;
+  z-index: 100;
+}
+
+.special {
+  color: #42a6ff;
+}
+
+.aboutTitle {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5rem; 
+}
+
+.uploadContainer {
+  padding-bottom:300px;
+  align-self: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.uploadCTAs .uploadButtons {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 3px;
+  background-color: #8ebf42
+}
+
+.uploadTitle h1 {
+  color: #ffffff;
+  padding: 0;
+  margin: -50px 0 0 0;
+  font-size: 4rem;
+  z-index: 100;
+}
+
+.uploadTitle1 h1 {
+  color: #ffffff;
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 4rem;
+  z-index: 100;
+}
+
+.picture2{
+  transform: translateX(200px) scale(2);
+  
+}
+
+.picture3{
+  max-height: 100px;
+  max-width: 100%;
+  position: absolute;
+}

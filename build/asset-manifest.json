@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Molecode/static/css/main.0302dc97.css",
+    "main.js": "/Molecode/static/js/main.c0e320df.js",
+    "static/media/Apparel Black.ttf": "/Molecode/static/media/Apparel Black.f1ccaba19b09c4f7f433.ttf",
+    "static/media/Picture1.png": "/Molecode/static/media/Picture1.30e57354bcd4d5ae288c.png",
+    "static/media/picture3.png": "/Molecode/static/media/picture3.b3097d4aecacce4328b5.png",
+    "static/media/picture2.png": "/Molecode/static/media/picture2.818b626765596e4f7bfe.png",
+    "index.html": "/Molecode/index.html",
+    "main.0302dc97.css.map": "/Molecode/static/css/main.0302dc97.css.map",
+    "main.c0e320df.js.map": "/Molecode/static/js/main.c0e320df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0302dc97.css",
+    "static/js/main.c0e320df.js"
+  ]
+}
